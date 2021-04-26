@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">AcsMobile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">ACS mobile</string>
+    <string name="menu_news">Aktualności</string>
+
+    <string name="menu_events">Wydarzenia</string>
+        <string name="submenu_reservations">Dokonane rezerwacje</string>
+        <string name="submenu_kategories">Kategorie</string>
+        <string name="submenu_localisation">Lokalizacje</string>
+    <string name="menu_info">Info</string>
+        <string name="submenu_sections">Sekcje</string>
+        <string name="submenu_leaders">Kierownictwo</string>
+        <string name="submenu_team">Kadra</string>
+        <string name="submenu_postgraduate">Studia podyplomowe</string>
+        <string name="submenu_exams">Egzaminy i zaliczenia WF</string>
+        <string name="submenu_athletes">Sportowcy z AMW</string>
+        <string name="submenu_clubs">Kluby przy ACS AMW Gdynia</string>
+        <string name="submenu_terms">Regulamin ACS</string>
+    <string name="menu_pools">Baseny</string>
+        <string name="submenu_schedules">Grafik basenu</string>
+        <string name="submenu_prices">Cennik OSzP</string>
+        <string name="submenu_for_team">OSzP dla kadry AMW</string>
+        <string name="submenu_for_courses">OSzP dla kursów</string>
+    <string name="menu_objects">Hale</string>
+        <string name="submenu_schedules_objects">Grafiki obiektów</string>
+        <string name="submenu_prices_objects">Cennik OWFiS</string>
+        <string name="submenu_for_team_objects">OWFiS dla kadry AMW</string>
+        <string name="submenu_for_courses_objects">OWFiS for courses</string>
+    <string name="menu_notifications">Komunikaty</string>
+    <string name="menu_contact">Kontakt</string>
+        <string name="submenu_phones">Wykaz telefonów</string>
+        <string name="submenu_help">POMOC</string>
+    <string name="menu_classes">Zajęcia Sportowe</string>
+        <string name="submenu_zs_news">Komunikaty ZS+</string>
+        <string name="submenu_zs_terms">Regulamin ZS</string>
+        <string name="submenu_zs_forms">Formalności ZS</string>
+
+    <string name="open">Otwórz</string>
+    <string name="close">Zamknij</string>
+
+
+
+    <string name="sectionLabelTextContact">Kontakt</string>
+    <string name="sectionLabelTextAdress">Dane adresowe</string>
+
+    <string name="avabilityInfoText">Informacje na temat dostępności ACS </string>
+    <string name="avabilityInfoTextPhone"> można uzyskać pod numerem telefonu: </string>
+    <string name="phoneNumber">+48 261 262 526</string>
+
+
+    <string name="uwagaText1">W związku z zaistniałą sytuacją epidemiologiczną na terenie kraju w trosce o Państwa bezpieczeństwo podjęliśmy szereg działań zgodnie z wytycznymi Ministerstwa Zdrowia i Głównego Inspektora Sanitarnego.</string>
+    <string name="uwagaText2">Dla zapewnienia bezpiecznego pobytu ACS
+prosi o potwierdzanie dostępności telefonicznie poprzez recepcje.</string>
+
+    <string name="adressLabelAcs">Akademickie Centrum Sportowe AMW Gdynia</string>
+    <string name="adressContentAcs">ul. Grudzińskiego 1, 81–103 Gdynia</string>
+    <string name="adressLabelAmw">Akademia Marynarki Wojennej</string>
+    <string name="adressContentAmw">ul. Jana Śmidowicza 69, 81–127 Gdynia</string>
+</resources>

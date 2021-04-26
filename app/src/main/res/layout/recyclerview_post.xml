@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="post"
+            type="com.example.acsmobile.model.news.NewsResponseModelItem" />
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_margin="@dimen/grid_spacer1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_spacer1">
+
+        <TextView
+            android:id="@+id/authorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="330dp"
+            android:layout_marginRight="330dp"
+            android:text="@{post.author}"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/dateText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="318dp"
+            android:layout_marginRight="318dp"
+            android:textSize="8sp"
+            android:text="@{post.date}"
+            app:layout_constraintBottom_toTopOf="@id/titleText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/authorText" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{post.title.rendered}"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@id/shortContentText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+        <TextView
+            android:id="@+id/shortContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{post.content.rendered"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+</layout>

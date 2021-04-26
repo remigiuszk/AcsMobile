@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.acsmobile.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.acsmobile.ui.news.NewsFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/news_fragment" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.acsmobile.ui.events.EventsMainFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/events_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_events_localization"
+        android:name="com.example.acsmobile.ui.events.EventsLocalizationFragment"
+        android:label="@string/submenu_localisation"
+        tools:layout="@layout/events_localization_fragment" />
+
+    <fragment
+        android:id="@+id/nav_events_reservations"
+        android:name="com.example.acsmobile.ui.events.EventsReservationsFragment"
+        android:label="@string/submenu_reservations"
+        tools:layout="@layout/events_reservations_fragment" />
+
+    <fragment
+        android:id="@+id/nav_events_categories"
+        android:name="com.example.acsmobile.ui.events.EventsCategoriesFragment"
+        android:label="Kategorie"
+        tools:layout="@layout/events_categories_fragment" />
+
+    <fragment
+        android:id="@+id/nav_classes"
+        android:name="com.example.acsmobile.ui.classes.ClassesMainFragment"
+        android:label="@string/menu_classes"
+        tools:layout="@layout/classes_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_classes_forms"
+        android:name="com.example.acsmobile.ui.classes.ClassesFormsFragment"
+        android:label="@string/submenu_zs_forms"
+        tools:layout="@layout/classes_forms_fragment" />
+
+    <fragment
+        android:id="@+id/nav_classes_messages"
+        android:name="com.example.acsmobile.ui.classes.ClassesMessagesFragment"
+        android:label="@string/submenu_zs_news"
+        tools:layout="@layout/classes_messages_fragment" />
+
+    <fragment
+        android:id="@+id/nav_classes_terms"
+        android:name="com.example.acsmobile.ui.classes.ClassesTermsFragment"
+        android:label="@string/submenu_zs_terms"
+        tools:layout="@layout/classes_terms_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.acsmobile.ui.contact.ContactMainFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/contact_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contact_phones"
+        android:name="com.example.acsmobile.ui.contact.ContactPhonesFragment"
+        android:label="@string/submenu_phones"
+        tools:layout="@layout/contact_phones_fragment" />
+
+    <fragment
+        android:id="@+id/nav_objects_courses"
+        android:name="com.example.acsmobile.ui.objects.ObjectsCoursesFragment"
+        android:label="@string/submenu_for_courses_objects"
+        tools:layout="@layout/objects_courses_fragment" />
+
+    <fragment
+        android:id="@+id/nav_objects_for_team"
+        android:name="com.example.acsmobile.ui.objects.ObjectsForTeamFragment"
+        android:label="@string/submenu_for_team_objects"
+        tools:layout="@layout/objects_for_team_fragment" />
+
+    <fragment
+        android:id="@+id/nav_objects_pricing"
+        android:name="com.example.acsmobile.ui.objects.ObjectsPricingFragment"
+        android:label="@string/submenu_prices"
+        tools:layout="@layout/objects_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_objects_schedule"
+        android:name="com.example.acsmobile.ui.objects.ObjectsScheduleFragment"
+        android:label="@string/submenu_schedules_objects"
+        tools:layout="@layout/objects_schedule_fragment" />
+
+    <fragment
+        android:id="@+id/nav_objects"
+        android:name="com.example.acsmobile.ui.objects.ObjectsMainFragment"
+        android:label="@string/menu_objects"
+        tools:layout="@layout/objects_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pools"
+        android:name="com.example.acsmobile.ui.pools.PoolsMainFragment"
+        android:label="@string/menu_pools"
+        tools:layout="@layout/pools_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pools_schedule"
+        android:name="com.example.acsmobile.ui.pools.PoolsScheduleFragment"
+        android:label="@string/submenu_schedules"
+        tools:layout="@layout/pools_schedule_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pools_for_team"
+        android:name="com.example.acsmobile.ui.pools.PoolsForTeamFragment"
+        android:label="@string/submenu_for_team"
+        tools:layout="@layout/pools_for_team_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pools_pricing"
+        android:name="com.example.acsmobile.ui.pools.PoolsPricingFragment"
+        android:label="@string/submenu_prices"
+        tools:layout="@layout/pools_pricing_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pools_courses"
+        android:name="com.example.acsmobile.ui.pools.PoolsCoursesFragment"
+        android:label="@string/submenu_for_courses"
+        tools:layout="@layout/pools_courses_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.acsmobile.ui.info.InfoMainFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/info_main_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_athletes"
+        android:name="com.example.acsmobile.ui.info.InfoAthletesFragment"
+        android:label="@string/submenu_athletes"
+        tools:layout="@layout/info_athletes_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_clubs"
+        android:name="com.example.acsmobile.ui.info.InfoClubsFragment"
+        android:label="@string/submenu_clubs"
+        tools:layout="@layout/info_clubs_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_directorship"
+        android:name="com.example.acsmobile.ui.info.InfoDirectorshipFragment"
+        android:label="@string/submenu_leaders"
+        tools:layout="@layout/info_directorship_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_exams"
+        android:name="com.example.acsmobile.ui.info.InfoExamsFragment"
+        android:label="@string/submenu_exams"
+        tools:layout="@layout/info_exams_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_postgraduate"
+        android:name="com.example.acsmobile.ui.info.InfoPostgraduateFragment"
+        android:label="@string/submenu_postgraduate"
+        tools:layout="@layout/info_postgraduate_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_sections"
+        android:name="com.example.acsmobile.ui.info.InfoSectionsViewModelFragment"
+        android:label="@string/submenu_sections"
+        tools:layout="@layout/info_sections_view_model_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_team"
+        android:name="com.example.acsmobile.ui.info.InfoTeamFragment"
+        android:label="@string/submenu_team"
+        tools:layout="@layout/info_team_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info_terms"
+        android:name="com.example.acsmobile.ui.info.InfoTermsFragment"
+        android:label="@string/submenu_terms"
+        tools:layout="@layout/info_terms_fragment" />
+
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="com.example.acsmobile.ui.messages.MessagesFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/messages_fragment" />
+
+</navigation>

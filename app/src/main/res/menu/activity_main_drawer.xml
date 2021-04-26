@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_info">
+            <menu>
+                <item
+                    android:id="@+id/subnav_sections"
+                    android:title="@string/submenu_sections" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/menu_news" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_events"
+            android:title="@string/menu_events" />
+        <item
+            android:id="@+id/nav_pools"
+            android:icon="@drawable/ic_pools"
+            android:title="@string/menu_pools" />
+        <item
+            android:id="@+id/nav_objects"
+            android:icon="@drawable/ic_objects"
+            android:title="@string/menu_objects" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications"
+            android:title="@string/menu_notifications" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/menu_contact" />
+        <item
+            android:id="@+id/nav_classes"
+            android:icon="@drawable/ic_classes"
+            android:title="@string/menu_classes" />
+    </group>
+</menu>
