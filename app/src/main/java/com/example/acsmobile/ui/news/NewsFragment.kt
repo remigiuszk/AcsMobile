@@ -29,28 +29,37 @@ class NewsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         binding = NewsFragmentBinding.inflate(layoutInflater)
-        val view = binding.root
-        recyclerviewNews = view.findViewById<RecyclerView>(R.id.recyclerViewNews)
         return inflater.inflate(R.layout.news_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        recyclerviewNews = view.findViewById(R.id.recyclerViewNews)
         val api = NewsApi()
         val repo = NewsRepository(api)
         factory = NewsViewModelFactory(repo)
         viewModel = ViewModelProvider(this, factory).get(NewsViewModel::class.java)
         viewModel.getNews()
-//        recyclerviewNews.layoutManager = LinearLayoutManager(requireContext())
-//        recyclerviewNews.adapter = viewModel.news.value?.let { NewsRecyclerViewAdapter(it) }
-//        recyclerviewNews.setHasFixedSize(true)
         viewModel.news.observe(viewLifecycleOwner, { news ->
             recyclerviewNews.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
                 it.adapter = NewsRecyclerViewAdapter(news)
             }
-        })
+    })
     }
 
-}
+//    override fun onActivityCreated(savedInstanceState: Bundle?) {
+//        super.onActivityCreated(savedInstanceState)
+////        recyclerviewNews.layoutManager = LinearLayoutManager(requireContext())
+////        recyclerviewNews.adapter = viewModel.news.value?.let { NewsRecyclerViewAdapter(it) }
+////        recyclerviewNews.setHasFixedSize(true)
+//        viewModel.news.observe(viewLifecycleOwner, { news ->
+//            recyclerviewNews.also {
+//                it.layoutManager = LinearLayoutManager(requireContext())
+//                it.setHasFixedSize(true)
+//                it.adapter = NewsRecyclerViewAdapter(news)
+//            }
+//        })
+    }
+

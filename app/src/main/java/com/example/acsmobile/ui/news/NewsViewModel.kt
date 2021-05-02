@@ -5,6 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.acsmobile.coroutines.Coroutines
 import com.example.acsmobile.model.news.NewsResponseModel
+import com.example.acsmobile.model.news.PostModel
+import com.example.acsmobile.model.news.toPostModel
 import com.example.acsmobile.repository.NewsRepository
 import kotlinx.coroutines.Job
 
@@ -13,8 +15,9 @@ class NewsViewModel(
 ) : ViewModel() {
 
     private lateinit var job: Job
-    private val _news = MutableLiveData<NewsResponseModel>()
-    val news : LiveData<NewsResponseModel>
+    private val _news = MutableLiveData<ArrayList<PostModel>>()
+    val news : LiveData<ArrayList<PostModel>>
+
         get() = _news
 
     fun getNews() {
@@ -22,7 +25,14 @@ class NewsViewModel(
             {
                 repo.getNews() }
         ) {
-            _news.value = it
+            if (it != null) {
+                val arrayList = ArrayList<PostModel>()
+                for (item in it){
+                    val post = item.toPostModel()
+                    arrayList.add(post)
+                }
+                _news.value = arrayList
+            }
         }
     }
 

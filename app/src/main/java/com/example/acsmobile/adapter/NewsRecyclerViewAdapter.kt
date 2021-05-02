@@ -7,9 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.acsmobile.model.news.NewsResponseModel
 import com.example.acsmobile.R
 import com.example.acsmobile.databinding.RecyclerviewPostBinding
+import com.example.acsmobile.model.news.PostModel
 
 class NewsRecyclerViewAdapter(
-    private val news : NewsResponseModel
+    private val news : ArrayList<PostModel>
 ): RecyclerView.Adapter<NewsRecyclerViewAdapter.NewsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder  =
@@ -24,7 +25,9 @@ class NewsRecyclerViewAdapter(
 
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
-        holder.recyclerViewPostBinding.post = news[position]
+        holder.recyclerViewPostBinding.date = news[position].date
+        holder.recyclerViewPostBinding.title = news[position].title
+        holder.recyclerViewPostBinding.contentShort = news[position].contentShort
     }
 
     override fun getItemCount(): Int {

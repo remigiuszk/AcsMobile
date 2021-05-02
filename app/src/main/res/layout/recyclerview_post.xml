@@ -4,8 +4,14 @@
 
     <data>
         <variable
-            name="post"
-            type="com.example.acsmobile.model.news.NewsResponseModelItem" />
+            name="title"
+            type="String" />
+        <variable
+            name="date"
+            type="String" />
+        <variable
+            name="contentShort"
+            type="String" />
     </data>
 <androidx.cardview.widget.CardView
     android:layout_margin="@dimen/grid_spacer1"
@@ -23,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="330dp"
             android:layout_marginRight="330dp"
-            android:text="@{post.author}"
+            android:text="Sample Author"
             android:textSize="8sp"
             app:layout_constraintBottom_toTopOf="@+id/dateText"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +43,7 @@
             android:layout_marginEnd="318dp"
             android:layout_marginRight="318dp"
             android:textSize="8sp"
-            android:text="@{post.date}"
+            android:text="@{date}"
             app:layout_constraintBottom_toTopOf="@id/titleText"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/authorText" />
@@ -46,7 +52,7 @@
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{post.title.rendered}"
+            android:text="@{title}"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="@id/shortContentText"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -56,11 +62,12 @@
             android:id="@+id/shortContentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{post.content.rendered"
+            android:text="@{contentShort}"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+            app:layout_constraintTop_toBottomOf="@+id/titleText"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
