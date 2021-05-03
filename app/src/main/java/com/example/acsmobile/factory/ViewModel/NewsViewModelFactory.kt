@@ -1,4 +1,4 @@
-package com.example.acsmobile.factory
+package com.example.acsmobile.factory.ViewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

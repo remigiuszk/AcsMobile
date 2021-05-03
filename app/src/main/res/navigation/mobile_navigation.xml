@@ -175,9 +175,114 @@
 
     <fragment
         android:id="@+id/nav_info_sections"
-        android:name="com.example.acsmobile.ui.info.InfoSectionsViewModelFragment"
+        android:name="com.example.acsmobile.ui.info.InfoSectionsFragment"
         android:label="@string/submenu_sections"
-        tools:layout="@layout/info_sections_view_model_fragment" />
+        tools:layout="@layout/info_sections_fragment" >
+        <argument
+            android:name="layoutName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_info_sections_to_nav_info_sections_bobsley"
+            app:destination="@id/nav_info_sections_bobsleje" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_lekkoatletyka"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionAtheticsFragment"
+        android:label="Lekkoatletyka"
+        tools:layout="@layout/section_athetics_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_koszykowka"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionBasketballFragment"
+        android:label="Koszykówka"
+        tools:layout="@layout/section_basketball_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_scianka_wspinaczkowa"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionClimbingFragment"
+        android:label="Ścianka wspinaczkowa"
+        tools:layout="@layout/section_climbing_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_futsal"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionFutsalFragment"
+        android:label="Futsal"
+        tools:layout="@layout/section_futsal_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_pilka_reczna"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionHandballFragment"
+        android:label="Piłka ręczna"
+        tools:layout="@layout/section_handball_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_rugby"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionRugbyFragment"
+        android:label="Rugby"
+        tools:layout="@layout/section_rugby_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_zeglarstwo"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionSailingFragment"
+        android:label="Żeglarstwo"
+        tools:layout="@layout/section_sailing_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_bobsleje"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionBobsleysFragment"
+        android:label="Bobsleje"
+        tools:layout="@layout/section_bobsleys_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_samoobrona"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionSelfDefenceFragment"
+        android:label="Samoobrona"
+        tools:layout="@layout/section_self_defence_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_strzelectwo"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionShootingFragment"
+        android:label="Strzelectwo"
+        tools:layout="@layout/section_shooting_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_plywanie"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionSwimmingFragment"
+        android:label="Samoobrona"
+        tools:layout="@layout/section_self_defence_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_tenis_stolowy"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionTableTennisFragment"
+        android:label="Tenis stołowy"
+        tools:layout="@layout/section_table_tennis_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_siatkowka"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionVolleyballFragment"
+        android:label="Siatkówka"
+        tools:layout="@layout/section_volleyball_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info_sections_podnoszenie_ciezarow"
+        android:name="com.example.acsmobile.ui.info.Sections.SectionWeightliftingFragment"
+        android:label="Podnoszenie ciężarów"
+        tools:layout="@layout/section_weightlifting_fragment" >
+    </fragment>
 
     <fragment
         android:id="@+id/nav_info_team"

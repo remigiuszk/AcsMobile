@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <data>
+        <variable
+            name="categoryName"
+            type="String" />
+    </data>
+
+    <Button
+        android:id="@+id/sectionButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="@{categoryName}"
+        android:textSize="9sp"
+        android:ellipsize="none"
+        android:maxLines="100"
+         />
+</layout>

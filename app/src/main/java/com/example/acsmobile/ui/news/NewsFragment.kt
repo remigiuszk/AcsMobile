@@ -5,13 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.acsmobile.adapter.NewsRecyclerViewAdapter
-import com.example.acsmobile.factory.NewsViewModelFactory
-import com.example.acsmobile.interfaces.NewsApi
+import com.example.acsmobile.factory.ViewModel.NewsViewModelFactory
+import com.example.acsmobile.interfaces.AcsAmwApi
 import com.example.acsmobile.R
 import com.example.acsmobile.repository.NewsRepository
 import com.example.acsmobile.databinding.NewsFragmentBinding
@@ -35,7 +34,7 @@ class NewsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerviewNews = view.findViewById(R.id.recyclerViewNews)
-        val api = NewsApi()
+        val api = AcsAmwApi()
         val repo = NewsRepository(api)
         factory = NewsViewModelFactory(repo)
         viewModel = ViewModelProvider(this, factory).get(NewsViewModel::class.java)
@@ -46,6 +45,7 @@ class NewsFragment : Fragment() {
                 it.setHasFixedSize(true)
                 it.adapter = NewsRecyclerViewAdapter(news)
             }
+
     })
     }
 
