@@ -1,12 +1,17 @@
 package com.example.acsmobile.ui.info.Sections
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.acsmobile.R
+import com.example.acsmobile.databinding.SectionBobsleysFragmentBinding
+import com.example.acsmobile.ui.info.InfoSectionsFragmentArgs
 
 class SectionBobsleysFragment : Fragment() {
 
@@ -15,16 +20,21 @@ class SectionBobsleysFragment : Fragment() {
     }
 
     private lateinit var viewModel: SectionBobsleysViewModel
+    private lateinit var binding: SectionBobsleysFragmentBinding
+    private val args: InfoSectionsFragmentArgs by navArgs()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.section_bobsleys_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = SectionBobsleysFragmentBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(this).get(SectionBobsleysViewModel::class.java)
-        // TODO: Use the ViewModel
+        binding.bobslejeButton.setOnClickListener {
+            findNavController().navigate(R.id.nav_news, bundleOf("categoryId" to args.categoryId))
+        }
+        binding.photoUrl = viewModel.imageUrl
+        return binding.root
     }
+//    }
 
 }

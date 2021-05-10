@@ -2,11 +2,17 @@ package com.example.acsmobile.ui.info.Sections
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.acsmobile.R
+import com.example.acsmobile.databinding.SectionShootingFragmentBinding
+import com.example.acsmobile.ui.info.InfoSectionsFragmentArgs
 
 class SectionShootingFragment : Fragment() {
 
@@ -15,12 +21,18 @@ class SectionShootingFragment : Fragment() {
     }
 
     private lateinit var viewModel: SectionShootingViewModel
-
+    private lateinit var binding:SectionShootingFragmentBinding
+    private val args:InfoSectionsFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.section_shooting_fragment, container, false)
+        binding = SectionShootingFragmentBinding.inflate(inflater, container, false)
+        binding.sectionShootingHyperlink.movementMethod = LinkMovementMethod.getInstance()
+        binding.shootingButton.setOnClickListener {
+            findNavController().navigate(R.id.nav_news, bundleOf("categoryId" to args.categoryId))
+        }
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

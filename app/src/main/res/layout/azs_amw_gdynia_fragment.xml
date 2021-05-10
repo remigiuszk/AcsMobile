@@ -1,53 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:bind="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.info.Sections.SectionShootingFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.info.Sections.basketsubfragments.AzsAmwGdyniaFragment">
+
+    <data>
+
+        <variable
+            name="photoUrl"
+            type="String" />
+    </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/grid_spacer1">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/grid_spacer1"
                 android:orientation="vertical">
-                <Button
-                    android:id="@+id/shootingButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:id="@+id/volleyballImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/section_shooting_button"
-                    android:textSize="12sp" />
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/section_basket_photo_caption1"
+                    android:scaleType="matrix"
+                    bind:image="@{photoUrl}" />
+
+                <TextView
+                    android:id="@+id/azsHyperlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/azs_hyperlink" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/section_self_defence_leader" />
+                    android:layout_marginTop="10dp"
+                    android:text="@string/azs_content" />
 
                 <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_marginTop="10dp"
-                    bind:videoId="ivryBrFJwxs" />
-
-                <TextView
-                    android:id="@+id/sectionShootingHyperlink"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/section_shooting_hyperlink" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/section_shooting_content" />
+                    bind:videoId="QCn8XNN_5vU"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>

@@ -36,6 +36,22 @@ class NewsViewModel(
         }
     }
 
+    fun getNews(id:Int){
+        job = Coroutines.ioThenMain(
+            {
+                repo.getNewsFromCategory(id) }
+        ) {
+            if (it != null) {
+                val arrayList = ArrayList<PostModel>()
+                for (item in it){
+                    val post = item.toPostModel()
+                    arrayList.add(post)
+                }
+                _news.value = arrayList
+            }
+        }
+    }
+
     override fun onCleared() {
         super.onCleared()
         if(::job.isInitialized) job.cancel()

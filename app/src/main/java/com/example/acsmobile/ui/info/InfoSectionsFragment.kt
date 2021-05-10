@@ -9,20 +9,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.acsmobile.R
-import com.example.acsmobile.adapter.NewsRecyclerViewAdapter
 import com.example.acsmobile.adapter.SectionsRecyclerViewAdapter
 import com.example.acsmobile.databinding.InfoSectionsFragmentBinding
-import com.example.acsmobile.databinding.NewsFragmentBinding
 import com.example.acsmobile.factory.ViewModel.InfoSectionsViewModelFactory
-import com.example.acsmobile.factory.ViewModel.NewsViewModelFactory
 import com.example.acsmobile.interfaces.AcsAmwApi
 import com.example.acsmobile.model.info.SectionCategoryModel
 import com.example.acsmobile.repository.CategoryRepository
-import com.example.acsmobile.repository.NewsRepository
-import com.example.acsmobile.ui.news.NewsViewModel
 
 class InfoSectionsFragment : Fragment() {
 
@@ -51,12 +45,13 @@ class InfoSectionsFragment : Fragment() {
         factory = InfoSectionsViewModelFactory(repo)
         viewModel = ViewModelProvider(this, factory).get(InfoSectionsViewModel::class.java)
         viewModel.getCategories()
-        var navController:NavController = findNavController()
+        var navController: NavController = findNavController()
         viewModel.categories.observe(viewLifecycleOwner, { news ->
             recyclerViewCategories.also {
                 it.layoutManager = GridLayoutManager(this.context, 3)
                 it.setHasFixedSize(true)
-                val filteredCategories = viewModel.categories.value?.filter {it.link.contains("sport")} as ArrayList<SectionCategoryModel>
+                val filteredCategories =
+                    viewModel.categories.value?.filter { it.link.contains("sport") } as ArrayList<SectionCategoryModel>
                 it.adapter = SectionsRecyclerViewAdapter(filteredCategories, navController, view)
             }
         })

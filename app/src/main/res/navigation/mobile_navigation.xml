@@ -179,11 +179,9 @@
         android:label="@string/submenu_sections"
         tools:layout="@layout/info_sections_fragment" >
         <argument
-            android:name="layoutName"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_nav_info_sections_to_nav_info_sections_bobsley"
-            app:destination="@id/nav_info_sections_bobsleje" />
+            android:name="categoryId"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
 
     <fragment
@@ -240,6 +238,9 @@
         android:name="com.example.acsmobile.ui.info.Sections.SectionBobsleysFragment"
         android:label="Bobsleje"
         tools:layout="@layout/section_bobsleys_fragment" >
+        <action
+            android:id="@+id/bobsleje_to_news"
+            app:destination="@id/nav_news" />
     </fragment>
 
     <fragment
@@ -301,5 +302,11 @@
         android:name="com.example.acsmobile.ui.messages.MessagesFragment"
         android:label="@string/menu_notifications"
         tools:layout="@layout/messages_fragment" />
+
+    <fragment
+        android:id="@+id/nav_arka_amw_ii"
+        android:name="com.example.acsmobile.ui.info.Sections.basketsubfragments.ArkaAmwIIFragment"
+        android:label="ARKA AMW II GDYNIA"
+        tools:layout="@layout/arka_amw_i_i_fragment" />
 
 </navigation>

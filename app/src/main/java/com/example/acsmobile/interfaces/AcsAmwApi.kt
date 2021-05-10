@@ -7,6 +7,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 interface AcsAmwApi {
 
@@ -15,6 +16,9 @@ interface AcsAmwApi {
 
     @GET("categories?per_page=50")
     suspend fun getCategories() : Response<ArrayList<SectionCategoryDto>>
+
+    @GET("posts")
+    suspend fun getNewsFromCategory(@Query("categories")id:Int) : Response<NewsResponseModel>
 
     companion object{
         operator fun invoke() : AcsAmwApi{

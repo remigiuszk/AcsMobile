@@ -5,8 +5,6 @@ import java.security.SecureRandom
 import java.security.cert.CertificateException
 import java.security.cert.X509Certificate
 import javax.net.ssl.*
-
-
 fun getUnsafeOkHttpClient(): OkHttpClient.Builder? {
         // Create a trust manager that does not validate certificate chains
         val trustAllCerts: Array<TrustManager> = arrayOf<TrustManager>(

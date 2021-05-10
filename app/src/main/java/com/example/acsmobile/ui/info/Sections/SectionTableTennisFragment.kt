@@ -6,7 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.example.acsmobile.R
+import com.example.acsmobile.databinding.SectionTableTennisFragmentBinding
+import com.example.acsmobile.ui.info.InfoSectionsFragmentArgs
 
 class SectionTableTennisFragment : Fragment() {
 
@@ -15,12 +18,16 @@ class SectionTableTennisFragment : Fragment() {
     }
 
     private lateinit var viewModel: SectionTableTennisViewModel
+    private lateinit var binding: SectionTableTennisFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.section_table_tennis_fragment, container, false)
+        binding = SectionTableTennisFragmentBinding.inflate(inflater, container, false)
+        viewModel = ViewModelProvider(this).get(SectionTableTennisViewModel::class.java)
+        binding.photoUrl = viewModel.imageUrl
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

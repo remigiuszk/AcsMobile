@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.acsmobile.adapter.NewsRecyclerViewAdapter
@@ -14,6 +15,7 @@ import com.example.acsmobile.interfaces.AcsAmwApi
 import com.example.acsmobile.R
 import com.example.acsmobile.repository.NewsRepository
 import com.example.acsmobile.databinding.NewsFragmentBinding
+import com.example.acsmobile.ui.info.InfoSectionsFragmentArgs
 
 class NewsFragment : Fragment() {
 
@@ -24,6 +26,7 @@ class NewsFragment : Fragment() {
     private lateinit var viewModel: NewsViewModel
     private lateinit var factory: NewsViewModelFactory
     private lateinit var recyclerviewNews: RecyclerView
+    private val args: InfoSectionsFragmentArgs by navArgs()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -38,7 +41,10 @@ class NewsFragment : Fragment() {
         val repo = NewsRepository(api)
         factory = NewsViewModelFactory(repo)
         viewModel = ViewModelProvider(this, factory).get(NewsViewModel::class.java)
-        viewModel.getNews()
+        if(args.categoryId == 0)
+            viewModel.getNews()
+        else
+            viewModel.getNews(args.categoryId)
         viewModel.news.observe(viewLifecycleOwner, { news ->
             recyclerviewNews.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
