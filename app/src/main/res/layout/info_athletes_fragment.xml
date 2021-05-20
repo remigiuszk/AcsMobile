@@ -5,9 +5,428 @@
     android:layout_height="match_parent"
     tools:context=".ui.info.InfoAthletesFragment">
 
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_spacer1">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_spacer1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Wybitni sportowcy z AMW"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:id="@+id/tablelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="Nazwisko i imię"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="Dyscyplina sportowa"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <View
+                        android:id="@+id/SplitLine_hor1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#373737" />
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete1"
+                            android:layout_width="250dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_czerlonko_wojciech"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete2"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_frasunkiewicz"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete3"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_garbacz"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete4"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_kaminski_g"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete5"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_kaminski_k"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete6"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_krefft"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete7"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_konopatzki"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete8"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_matczak"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete9"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_podgorna"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete10"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_ponitka"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete11"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_put"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete12"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_rembiszewska"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete13"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_sapiejka"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_sailing"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete14"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_smolarek"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_bobsleys"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete15"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_stryjewski"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete16"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_szymanski"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete17"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_szymanski_roman"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete18"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_tomala"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/disciplne_shooting"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete19"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_witlinski"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/athlete20"
+                            android:layout_width="225dp"
+                            android:layout_column="2"
+                            android:padding="5dp"
+                            android:text="@string/athlete_zolnierewicz"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="5dp"
+                            android:text="@string/discipline_basket"
+                            android:textSize="18sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 </FrameLayout>

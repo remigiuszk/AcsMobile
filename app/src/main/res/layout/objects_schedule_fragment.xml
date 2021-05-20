@@ -5,9 +5,451 @@
     android:layout_height="match_parent"
     tools:context=".ui.objects.ObjectsScheduleFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+    <androidx.cardview.widget.CardView style="@style/CardViewMainStyle">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_spacer1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewHeaderStyle"
+                    android:text="@string/objects_schedu8le_header" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Dzień tygodnia"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="kadra i pracownicy AMW"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:padding="3dp"
+                                android:text="podchorążowie"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="kursy"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Grupy zorganizowane***"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Komercja (karnety i Bilety)"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:id="@+id/SplitLine_hor1"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#373737" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="65dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Poniedziałek - Piątek" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="13:00 - 15:00" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="8:00 –  12:00; 16:00 – 17:45" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="zgodnie z osobnym Harmonogramem" />
+
+                            <TextView
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="65dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:padding="5dp"
+                                android:text="Sobota" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="13:00 - 15:00" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="16:00 – 20:00" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="zgodnie z osobnym Harmonogramem" />
+
+                            <TextView
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="65dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:padding="5dp"
+                                android:text="Niedziela" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="08:00 – 10:00" />
+
+                            <TextView
+                                android:layout_width="105dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="11:00 – 13:00 15:00 – 18:00" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="zgodnie z osobnym Harmonogramem" />
+
+                            <TextView
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    style="@style/TextViewHeaderStyle"
+                    android:text="@string/objects_schedule_hale_header" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Dzień tygodnia"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="kadra i pracownicy AMW"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:padding="3dp"
+                                android:text="podchorążowie"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="kursy"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Grupy zorganizowane***"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Komercja (karnety i Bilety)"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:id="@+id/SplitLine_hor2"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#373737" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="65dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Poniedziałek - Piątek" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="13:00 - 15:00" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="8:00 –  12:00; 16:00 – 17:45" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="zgodnie z osobnym Harmonogramem" />
+
+                            <TextView
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="65dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:padding="5dp"
+                                android:text="Sobota" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="13:00 - 15:00" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="16:00 – 20:00" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="zgodnie z osobnym Harmonogramem" />
+
+                            <TextView
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="65dp"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:ellipsize="none"
+                                android:padding="5dp"
+                                android:text="Niedziela" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="08:00 – 10:00" />
+
+                            <TextView
+                                android:layout_width="105dp"
+                                android:layout_column="3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="11:00 – 13:00 15:00 – 18:00" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_column="5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="zgodnie z osobnym Harmonogramem" />
+
+                            <TextView
+                                android:layout_column="6"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="Brak" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>

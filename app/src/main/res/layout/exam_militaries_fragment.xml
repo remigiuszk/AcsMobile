@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.info.InfoTermsFragment">
+    tools:context=".ui.info.exams.ExamMilitariesFragment">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/grid_spacer1">
 
         <ScrollView
@@ -17,22 +17,27 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/grid_spacer1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="@string/info_terms_title"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center"
+                    android:text="@string/exams_militaries_title" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/info_terms_content" />
+                    android:layout_marginTop="15dp"
+                    android:text="@string/exam_militaries_content" />
+
+                <TextView
+                    android:id="@+id/exam_militaries_hyperlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/exam_militaries_hyperlink" />
+
 
             </LinearLayout>
         </ScrollView>

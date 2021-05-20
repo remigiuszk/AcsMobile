@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
             NavigationItem("Kadra", R.id.nav_info_team),
             NavigationItem("Studia podyplomowe", R.id.nav_info_postgraduate),
             NavigationItem("Egzaminy i zaliczenia WF", R.id.nav_info_exams),
-            NavigationItem("Sportowcy z AMW", R.id.nav_info_exams),
+            NavigationItem("Sportowcy z AMW", R.id.nav_info_athletes),
             NavigationItem("Kluby przy ACS AMW Gdynia", R.id.nav_info_clubs),
             NavigationItem("Regulamin ACS", R.id.nav_info_terms)
         )

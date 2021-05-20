@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.objects.ObjectsPricingFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+    <data>
+        <variable
+            name="photoUrl"
+            type="String" />
+        <variable
+            name="photoUrl2"
+            type="String" />
+    </data>
 
-</FrameLayout>
+<androidx.cardview.widget.CardView
+    style="@style/CardViewMainStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_spacer1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            bind:image="@{photoUrl}"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            bind:image="@{photoUrl2}"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</layout>

@@ -5,9 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.objects.ObjectsCoursesFragment">
 
-    <TextView
+<androidx.cardview.widget.CardView
+    style="@style/CardViewMainStyle">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
-
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_spacer1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/objects_courses"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
 </FrameLayout>

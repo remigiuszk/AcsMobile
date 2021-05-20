@@ -1,0 +1,2076 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.exams.ExamMilitaryStudentsSwimmingFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_spacer1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_spacer1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_civilains_content9"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="50m stylem"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="grzbietowym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="50 sek."
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="55 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="60 sek." />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="dowolnym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="45 sek." />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="50 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="55 sek." />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="klasycznym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="55 sek." />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="60 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="65 sek." />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="motylkowym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="50 sek." />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="55 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="60 sek." />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_pchor_sw_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="500" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="475" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="450" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="525" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="500" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="575" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="525" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="600" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="575" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="550" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="V rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="650" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="625" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="600" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_civilians_fragment_content5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#DFDFDF"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="20 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="15 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="10 m" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="22 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="17 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="12 m " />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="24 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="18 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="13 m" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="25 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="20 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="15 m" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_civilians_content6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="100 stylem"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="grzbietowym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="110 sek."
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="125 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="130 sek." />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="dowolnym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="105 sek." />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="110 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="120 sek." />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="klasycznym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="120 sek." />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="130 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="140 sek." />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="zmiennym" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="105 sek." />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="110 sek." />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="120 sek." />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_pchor_sw_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="500" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="475" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="450" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="525" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="500" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="600" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="525" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="650" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="575" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="550" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="V rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="650" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="625" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="600" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_civilians_fragment_content5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="20 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="15 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="10 m" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="22 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="17 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="12m " />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="24 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="18 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="13 m" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="z karabinem" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="25 m" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="20 m" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="15 m" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="BDB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="DB"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="DST"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="500" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="475" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="450" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="525" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="500" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="600" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="525" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="650" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="575" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="550" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="V rok" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="12 min." />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="650" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="625" />
+
+                            <TextView
+                                android:layout_column="5"
+                                android:padding="5dp"
+                                android:text="600" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_civilians_content7"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/exam_civilians_content8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/exam_military_student_cond"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#DFDFDF"
+                        android:padding="3dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:showDividers="end">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="Mobility" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="Exercises"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="3dp"
+                                android:text="Unit of measurement"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="Year of studies"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="GRADE" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="5" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="4" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="3" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="Endurance" />
+
+                            <TextView
+                                android:layout_width="225dp"
+                                android:layout_column="2"
+                                android:ellipsize="none"
+                                android:maxLines="10"
+                                android:padding="5dp"
+                                android:text="Fartlek 3000 (meters) or continual swimming 12 (minutes)" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="minutes" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="IV" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="13,15" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="14,15" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="15,25" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="13,30" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="14,30" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="15,40" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="13,15" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="14,15" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="15,25" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="14,10" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="15,10" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="16,20" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="meters" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="IV" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="575" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="574-525" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="550" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="549-500" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="499-450" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="525" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="524-475" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="474-425" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="500" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="499-450" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="449-400" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="Strength stomach muscles" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="Sit-ups in 2 minutes" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="number" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="IV" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="55" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="50" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="45" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="50" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="45" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="40" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="45" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="40" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="35" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="Shoulder strength" />
+
+                            <TextView
+                                android:layout_width="225dp"
+                                android:layout_column="2"
+                                android:ellipsize="none"
+                                android:maxLines="10"
+                                android:padding="5dp"
+                                android:text="Pull-ups on the horizontal bar or push-ups on the bench" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="number" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="IV" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="11" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="9" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="7" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="10" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="8" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="6" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="8" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="6" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="5" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="58" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="52" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="46" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="54" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="48" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="42" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="50" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="44" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="38" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="44" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="38" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="32" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="Speed and agility" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="Shuttle run 10x10 or evnelope run" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="seconds" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="IV" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="30,7" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="31,7" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="32,7" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="31,0" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="32,0" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="33,0" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="31,3" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="32,3" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="33,3" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="IV" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="23,2" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="24,2" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="25,2" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="III" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="23,6" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="24,6" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="25,6" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="II" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="24,0" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="25,0" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="26,0" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:padding="5dp"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_column="2"
+                                android:padding="5dp"
+                                android:text="24,4" />
+
+                            <TextView
+                                android:layout_column="3"
+                                android:padding="5dp"
+                                android:text="25,4" />
+
+                            <TextView
+                                android:layout_column="4"
+                                android:padding="5dp"
+                                android:text="26,4" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

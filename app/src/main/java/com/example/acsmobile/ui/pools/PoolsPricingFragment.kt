@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.acsmobile.R
+import com.example.acsmobile.databinding.PoolsPricingFragmentBinding
 
 class PoolsPricingFragment : Fragment() {
 
@@ -15,18 +16,17 @@ class PoolsPricingFragment : Fragment() {
     }
 
     private lateinit var viewModel: PoolsPricingViewModel
+    private lateinit var binding: PoolsPricingFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.pools_pricing_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+        binding = PoolsPricingFragmentBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(this).get(PoolsPricingViewModel::class.java)
-        // TODO: Use the ViewModel
+        binding.photoUrl = viewModel.photoUrl
+        binding.photoUrl2 = viewModel.photoUrl2
+        return binding.root
     }
 
 }
